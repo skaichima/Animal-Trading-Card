@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="card--front">
+                        <div class="card--img"></div>
+                        <div class="card--info">
+                            <h1 class="card--name">Snowy Owl</h1>
+                            <h2 class="card--job">PET / MESSANGER</h2>
+                            <p class="card--desc">Snowy Owl is a very large messanger with a smoothly rounded head. It can
+                                fly fast and in long distances.With snowy owl you won't miss any messages.
+                            <h6 class="more">
+                                << TAP TO VIEW MORE INFO>>
+                            </h6>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card--fronts">
+                        <div class="detail">
+                            <h5>Scientific name</h5> Bubo scandiacus
+                        </div>
+                        <div class="detail">
+                            <h5>Length</h5> 63 - 73 cm
+                        </div>
+                        <div class="detail">
+                            <h5>Mass</h5> 2 kg
+                        </div>
+                        <div class="detail">
+                            <h5>origin</h5>
+                            Snowy owls are native to the Arctic regions of both North America and the Palearctic, breeding
+                            mostly on the tundra. It has a number of unique adaptations to its habitat and lifestyle, which
+                            are quite distinct from other extant owls.
+                        </div>
+                        <div class="detail">
+                            <h5>Enemies</h5>
+                            As far as natural predators go, only a handful of animals hunt Snowy Owls, usually foxes and
+                            wolves.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const card = document.querySelector(".flip-card");
+            const cardBody = document.querySelector(".flip-card-inner");
+
+            card.addEventListener('click', () => {
+                cardBody.classList.toggle("flipped")
+            })
+        </script>
+
+    </body>
+
+</html>
